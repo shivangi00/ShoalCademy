@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #fff;
+    color: #000;
+    padding: 0 20px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/*NAVBAR*/
+    #navbar{
+        right: 0px;
+        left: -10px;
+        width: 103.3%;
+        border-bottom: rgba(0, 0, 0, 0.144) solid 1px;
+        position: fixed;
+        overflow: hidden;
+    }
+
+    #navbar a{
+        display: block;
+    }
+
+    .navbar{
+        height: 80px;
+        z-index: 1;
+        position: fixed;
+    }
+    
+    .icon_img{
+        width: 40px;
+        height: 50px;
+        margin-top: -8px;
+        margin-left: 20px;
+    }
+    
+    .aqua_home h4{
+        padding-top: 5px;
+        margin-left: 0;
+        float: left;
+        position: relative;
+        color: #000;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .aqua_home h4:hover{
+        text-decoration: underline rgb(124, 176, 255);
+        font-style: none;
+    }
+
+    .aqua_course{
+        color: #000;
+    }
+    .pool{
+        padding-top: 5px;
+        float: right;
+        margin-left: 3rem;
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .dive{
+        padding-top: 5px;
+        float: right;
+        position: relative;
+        margin-left: 35rem;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .pool:hover, .dive:hover{
+        text-decoration: underline rgb(124, 176, 255);
+        font-style: none;
+        color: #000;
+    }
+
+    .signIn {
+        background-color: rgb(124, 176, 255);
+        border: none;
+        border-radius: 0.2rem;
+        padding: 8px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 19px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-top: -3px;
+        margin-left: 5rem;
+        box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.02);
+        cursor: pointer;
+    }
+
+    .signIn:hover{
+        background-color: rgb(56, 135, 255);
+        transition: ease-in-out 0.4s;
+    }
+
+
+/*MAIN*/
+
+    #main{
+        padding-top: 80px;
+        position: relative;
+    }
+
+    #main img{
+        height: 90%;
+        float: right;
+        padding-top: 50px;
+    }
+
+    .main button{
+        background: none;
+        border: none;
+        float: right;
+        padding-top: 30px;
+        padding-right: 20px;
+        outline: none;
+    }
+
+    .main i{
+        color: rgba(148, 138, 138, 0.849);
+        text-shadow: 0 0 10px rgb(255, 208, 0);
+    }
+
+    .main h1{
+        font-size: 55px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        text-align: left;
+        padding-top: 150px;
+        padding-left: 70px;
+    }
+
+    .main h5{
+        font-size: 20px;
+        letter-spacing: 0.07em;
+        line-height: 1.5em;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 80px;
+    }
+
+/*Courses*/
+
+    .courses{
+        background:none;
+        border-top: #c4d2ff solid 1px;
+        border-bottom: #c4d2ff solid 1px;
+        margin-top: 15rem;
+        margin-left: -1.5rem;
+        width: 1266px;
+        height: 500px;
+        
+        position: relative;
+    }
+    
+    #courses img{
+        height: 470px;
+        width: 450px;
+        float: left;
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+
+    .main-content h1{
+        font-size: 53px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        text-align: right;
+        padding-top: 140px;
+        padding-right: 80px;
+        
+    }
+
+    .main-content h5{
+        font-size: 20px;
+        letter-spacing: 0.07em;
+        line-height: 1.5em;
+        text-align: right;
+        padding-top: 10px;
+        padding-right: 80px;        
+        
+    }
+
+    .main-content button{
+        padding: 15px 25px;
+        float: right;
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 300px;
+        border-radius: 2em;
+        background-color: #fff;
+        text-decoration: none;
+        border-color: rgb(124, 181, 255);
+        outline: none;
+    }
+
+    .go-courses:hover{
+        cursor: pointer;
+        border-radius: 2em;
+        padding: 15px 35px;
+        margin-right: 290px;
+        transition: 0.6s ease-in-out;
+    }
+
+/*what we provide*/
+    .why-we{
+        background: none;
+        border-bottom: #c4d2ff solid 1px;
+        margin-top: 0px;
+        margin-left: -1.5rem;
+       
+        width: 1266px;
+        height: 500px;
+        
+        position: relative;
+    }
+
+    .why-we img{
+        float: right;
+        width: 50%;
+        padding-top: 70px;
+        padding-right: 5em;
+    }
+
+    .why-we h1{
+        font-size: 55px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        float: left;
+        text-align: left;
+        padding-top: 100px;
+        padding-left: 80px;
+    }
+
+    .perks{
+        float: left;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 100px;
+        line-height: 2em;
+    }
+    
+/*Join*/
+
+    .join{
+        background:none;
+        border-bottom: #c4d2ff solid 1px;
+        margin-top: 0px;
+        margin-left: -1.5rem;
+      
+        width: 1266px;
+        height: 550px;
+        
+        position: relative;
+    }
+
+    .join h1{
+        font-size: 48px;
+        letter-spacing: 0.05rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 50px;
+       
+    }
+
+    .join p{
+        padding: 45px 280px;
+    }
+
+    .logo{
+        width: 140px;
+        height: 100px;
+    }
+
+    .logo1{
+        margin-top: -15px;
+        width: 70px;
+        height: 60px;
+    }
+
+    .logo2{
+        width: 70px;
+        height: 80px;
+    }
+
+    .logo3{
+        width: 150px;
+        height: 50px;
+    }
+
+    .logo4{
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo5{
+        width: 60px;
+        height: 70px;
+    }
+
+    .logo6{
+        width: 120px;
+        height: 30px;
+    }
+
+    .logo7{
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo8{
+        width: 130px;
+        height: 120px;
+    }
+
+    .logo9{
+        width: 120px;
+        height: 40px;
+    }
+
+/*Testimonials*/
+
+    .review{
+        background:none;
+        border-bottom: #c4d2ff solid 1px;
+        margin-top: 0px;
+        margin-left: -1.5rem;
+        
+        width: 1266px;
+        height: 480px;
+        
+        position: relative;
+    }
+
+    #testimonial{
+        
+        text-align: center;
+        font-size: 51px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        position: relative;
+        padding-top: 30px;
+    }
+  
+    #testimonial::after {
+        content: "";
+        width: 140px;
+        position: absolute;
+        margin: 0 auto;
+        height: 3px;
+        background: rgb(56, 135, 255);
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        opacity: .8;
+    }
+
+    .col-center {
+        margin: 0 auto;
+        float: none !important;
+    }
+  
+    .carousel {
+      margin: 50px auto;
+      padding: 0 70px;
+    }
+    .carousel-item {
+      color: #999;
+      font-size: 18px;
+      text-align: center;
+      overflow: hidden;
+      min-height: 290px;
+    }
+    .carousel .item .img-box {
+      width: 135px;
+      height: 135px;
+      margin: 0 auto;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+    }
+    .carousel .img-box img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 50%;
+    }
+    .carousel .testimonial {
+      padding: 30px 0 10px;
+    }
+    .carousel .overview { 
+      font-style: italic;
+    }
+    .carousel .overview b {
+      text-transform: uppercase;
+      color: rgb(56, 135, 255);
+    }
+    .carousel .carousel-control {
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+      top: 50%;
+      background: none;
+    }
+    .carousel-control i {
+      font-size: 68px;
+      line-height: 42px;
+      position: absolute;
+      display: inline-block;
+      color: rgba(78, 73, 73, 0.459);
+      text-shadow: 0 3px 3px #e6e6e6, 0 0 0 rgba(83, 81, 81, 0.301);
+    }
+    .carousel .carousel-indicators {
+      bottom: -40px;
+    }
+    .carousel-indicators li, .carousel-indicators li.active {
+      width: 10px;
+      height: 10px;
+      margin: 1px 3px;
+      border-radius: 50%;
+    }
+    .carousel-indicators li { 
+      background: rgb(5, 195, 243);
+      border-color: transparent;
+      box-shadow: inset 0 2px 1px rgba(57, 4, 247, 0.2);
+    }
+    .carousel-indicators li.active {  
+      background: rgb(5, 195, 243);   
+      box-shadow: inset 0 2px 1px rgba(57, 4, 247, 0.2);
+    }
+
+/*Footer*/
+    .footer{
+        overflow: hidden;
+        /*background-color: rgb(234, 241, 253);*/
+        background-size: auto;
+        border-bottom: #4b4a4a27 solid 1px;
+        margin-top: 0px;
+        margin-left: -1.5rem;
+        
+        width: 1266px;
+        height: 300px;
+        
+        position: relative;   
+    }
+
+    .foot{
+        padding-top: 50px;
+    }
+
+    .foot p{
+        text-align: center;
+    }
+
+    .links a:hover{
+        cursor: pointer;
+    }
+    
+    /*Wave effect*/
+    .cont {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        bottom: -15%;
+        overflow: hidden;
+    }
+    
+    .line {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .line-1 {
+        z-index: 15;
+        opacity: 0.5;
+    }
+    .line-2 {
+        z-index: 10;
+        opacity: 0.7;
+    }
+    .line-3 {
+        z-index: 5;
+    }
+    
+    .wave {
+        position: absolute;
+        left: 0;
+        width: 200%;
+        height: 90%;
+        background-repeat: repeat no-repeat;
+        background-position: 0 bottom;
+        transform-origin: center bottom;
+    }
+    
+    .wave1 {
+        -webkit-background-size: 50% 80px;
+        background-size: 50% 80px;
+    }
+    .wave2 {
+        -webkit-background-size: 50% 100px;
+        background-size: 50% 100px;
+        animation: animate 12s linear infinite;
+    }
+    .wave3 {
+        -webkit-background-size: 50% 80px;
+        background-size: 50% 80px;
+        animation: animate 18s linear infinite;
+    }
+    @keyframes animate {
+        0% {
+            transform: translateX(0) translateZ(0) scaleY(1);
+        }
+        50% {
+            transform: translateX(-25%) translateZ(0) scaleY(0.5);
+        }
+        100% {
+            transform: translateX(-50%) translateZ(0) scaleY(1);
+        }
+    }

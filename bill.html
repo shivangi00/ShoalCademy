@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <!--meta tags-->    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--title-->
+        <title>ShoalCademy</title>
+        <!--bootstrap-->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!--bootstrap-->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="Stylesheets/bill.css">
+        <script src="https://kit.fontawesome.com/1d9b3c3ba8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="icon">
+            <a class="aqua_home" href="aqua.html">
+                <img class="icon_img" src="Media/icon.svg" alt="icon">
+            </a>
+            <h1>ShoalCademy</h1>
+            <h5>Let's Code and Grow.</h5>
+        </div>
+
+        <!--Rate List Data-->
+            <div class="pricelist column">
+                <!--Table 1-->
+                <table id="services" class="services right">
+                    <th>Facilities Price List (incl. of all taxes)</th>
+                    <tr>
+                        <td>Hostel Facility</td>
+                        <td>$30/month</td>
+                    </tr>
+                    <tr>
+                        <td>Mess Service</td>
+                        <td>$20/ month</td>
+                    </tr>
+                </table>
+                <!--Table 2-->
+                <table id="course-list" class="course-list left">
+                    <th>Course Price List (incl. of all taxes)</th>
+                    <tr>
+                        <td>App Development</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript: Beginner to Advanced</td>
+                        <td>$44</td>
+                    </tr>
+                    <tr>
+                        <td>Game Development with Python</td>
+                        <td>$29</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Artificial Intelligence</td>
+                        <td>$39</td>
+                    </tr>
+                    <tr>
+                        <td>React for Web Developers</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Java for Programmers</td>
+                        <td>$29</td>
+                    </tr>
+                    <tr>
+                        <td>Ace the Job Interviews</td>
+                        <td>$49</td>
+                    </tr>
+                    <tr>
+                        <td>Machine Learning for All</td>
+                        <td>$35</td>
+                    </tr>
+                </table>
+            </div>
+        <br>
+        <br>
+        <br>
+
+        <form id="bill" class="bill1">
+            <select id="sf">
+            <option selected value = "Hostel">Hostel Facility</option>
+            <option value = "Mess">Mess Service</option>
+            <option value = "App">App Development</option>
+            <option value = "Web">Web Development</option>
+            <option value = "JS">Javascript: Beginner to Advanced</option>
+            <option value="Python">Game Development with Python</option>
+            <option value="AI">Introduction to Artificial Intelligence</option>
+            <option value="React">React for Web Developers</option>
+            <option value="Java">Java for Programmers</option>
+            <option value="Interview">Ace the Job Interviews</option>
+            <option value="ML">Machine Learning for All</option>
+            </select>
+            <input type="button" value="Add to Bill" class="mybutton" id="getme">
+        </form>
+        <br><br>
+        <textarea class="bill" cols="100" rows="12" id="writeme" readonly></textarea>
+        <br>
+        <input type="submit" value="Clear Bill" class="mybutton bill2" id="clr">
+        <input type="submit" value="Confirm" class="mybutton bill3" id="out">
+        <!--Print Receipt-->
+        <button id="print-pg" class="mybutton print" onclick='printDocument("");'>Print Receipt</button>
+        
+        <!--Footer-->
+        <section id="footer" class="footer">
+            <div class="foot">
+                <p>Swim with us towards excellence. Let's Code and Learn.</p>
+                <p>Dive in with your Shoalmates.</p>
+                <p>Mail to us at : <a href="contact@shoalcademy.in">contact@shoalcademy.in</a></p>
+                <p class="links">
+                    <a class="fb-ic" href="#" target="_blank">
+                        <i class="fa fa-facebook"> </i>
+                    </a>&nbsp;&nbsp;&nbsp;
+                    <a class="gplus-ic" href="#">
+                        <i class="fa fa-google-plus"> </i>
+                    </a>&nbsp;&nbsp;&nbsp;
+                    <a class="li-ic" href="#" target="_blank">
+                        <i class="fa fa-linkedin"> </i>
+                    </a>&nbsp;&nbsp;&nbsp;
+                    <a class="ins-ic" href="#" target="_blank">
+                        <i class="fa fa-instagram"> </i>
+                    </a>    
+                </p>
+                <p style="font-size: 12px;">@Copyright ShoalCademy 2020</p>
+            </div>
+        </section>
+        <script src="Scripts/aqua_bill.js"></script>
+    </body>
+
+    </html>

@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.icon_img{
+    width: 40px;
+    height: 50px;
+    float: left;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: -60px;
+}
+
+h1{
+    padding: 30px 0 10px;
+    letter-spacing: 0.1em;
+}
+
+/*Float the two tables*/
+    .left{
+        width: 30%;
+        float: left;
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+
+    .right{
+        width: 32%;
+        float: right;
+        margin-top: 50px;
+        margin-right: 150px;
+    }
+
+/*Table formatting*/
+    table, tr, td {
+        padding: 5px;
+        margin-top: 30px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+/*Form formatting*/
+#bill{
+    text-align: center;
+    margin-top: 23em;
+    margin-left: 18em;
+}
+
+#sf {
+    height: 48px;
+    border: 2px solid #b4b39d;
+    border-radius: 4px;
+}
+
+#sf:hover{
+   cursor: pointer;
+}
+
+.mybutton {
+   border-color: rgb(144, 183, 255);
+   padding: 10px 12px;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   cursor: pointer;
+   outline: none;
+   border-radius: 4px;
+   margin-left: 5px;
+}
+
+.mybutton:hover{
+    border-color: rgb(43, 117, 255);
+    transition: 0.5s ease-in-out;
+    outline: none;
+}
+
+#entrybox {
+   width: 20%;
+   height: 43px;
+   margin-left: 5px;
+   border: 2px solid #b4b39d;
+   border-radius: 6px;
+   background-color: #c3c2ab;
+}
+
+textarea{
+    width: 500px;
+    height: 200px;
+}
+.bill {
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.bill1 {
+    margin-right: 19%;
+}
+
+.bill2, .bill3{
+    float: right;
+}
+
+.bill2{
+    margin-right: 38%;
+}
+
+.bill3{
+    margin-right: -18%;
+}
+
+.print{
+    margin-top: 70px;
+    float: right;
+    margin-right: -230px;
+    border-color: rgb(255, 141, 179);
+    padding: 10 40px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.print:hover{
+    border-color: rgb(255, 0, 85);
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+/*Footer*/
+#footer{
+    margin-top: 250px;
+}
+.footer{
+    overflow: hidden;
+    border-top: #c4d2ff solid 1px;
+    /*background-color: rgb(234, 241, 253);*/
+    background-size: auto;
+    border-bottom: #4b4a4a27 solid 1px;
+    margin-top: 0px;
+    text-align: center;
+    width: 1260px;
+    height: 300px;
+    position: relative;   
+}
+
+.foot{
+    padding-top: 50px;
+}
+
+.foot p{
+    text-align: center;
+}
+
+@media screen and (min-width:340px) and (max-width:699px){
+    
+    
+    h1{
+        padding: 100px 0 10px;
+        letter-spacing: 0.1em;
+    }
+    /*Float the two tables*/
+
+    .pricelist{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .left{
+        margin-top: 50px;
+        margin-left:100px;
+        font-size: 14px;
+    }
+
+    .right{
+        margin-right: 70px;
+        font-size: 14px;
+    }
+    /*Form formatting*/
+    #bill{
+        font-size: 14px;
+        padding: 10px 15px;
+        text-align: center;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    .mybutton {
+    margin-top: 10px;
+    margin-left: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    }
+
+    #writeme{
+        margin: 0;
+        padding: 0;
+    }
+
+    textarea{
+        width: 250px;
+        height: 200px;
+        font-size: 15px;
+    }
+
+    .bill1 {
+        margin-right: 5%;
+    }
+
+    .bill2, .bill3{
+        float: center;
+    }
+
+    .bill2{
+        margin-right: 12%;
+    }
+
+    .bill3{
+        margin-right: 0;
+    }
+
+    .print{
+        margin-top: 10px;
+        margin-right: 12%;
+    }
+
+    /*Footer*/
+    #footer{
+        margin-top: 100px;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1100px){
+    h1{
+        padding: 100px 0 10px;
+        letter-spacing: 0.1em;
+    }
+    /*Float the two tables*/
+    .left{
+        float: left;
+        margin-left: 100px;
+    }
+
+    .right{
+        margin-right: 100px;
+    }
+
+    /*Form formatting*/
+    #bill{
+        padding: 10px 15px;
+        text-align: center;
+        margin-top: 30em;
+        margin-left: 5em;
+    }
+
+    .mybutton {
+    margin-top: 10px;
+    margin-left: 12px;
+    }
+
+    #writeme{
+        margin: 0;
+        padding: 0;
+    }
+
+    textarea{
+        width: 350px;
+        height: 300px;
+        font-size: 15px;
+    }
+
+    .bill1 {
+        margin-right: 10%;
+    }
+
+    .bill2, .bill3{
+        float: center;
+    }
+
+    .bill2{
+        margin-right: 25%;
+    }
+
+    .bill3{
+        margin-right: 0;
+    }
+
+    .print{
+        margin-top: 10px;
+        margin-right: 29%;
+    }
+
+    /*Footer*/
+    #footer{
+        margin-top: 150px;
+        width: 100%;
+    }
+}
+

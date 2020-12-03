@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <!--meta tags-->    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--title-->
+        <title>ShoalCademy | Courses</title>
+        <!--bootstrap-->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="Stylesheets/courses.css">
+        <script src="https://kit.fontawesome.com/1d9b3c3ba8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <section id="navbar" class="navbar">
+            <a class="aqua_home" href="aqua.html">
+                <img class="icon_img" src="Media/icon.svg" alt="icon">
+            </a>
+            <a class="aqua_home" href="aqua.html">
+                <h4> ShoalCademy</h4>
+            </a>
+            
+            <button class="button signIn">Sign In</button>
+        </section>
+        
+        <!--Dark Mode-->
+        <section id="dark-theme" class="dark-theme">
+            <button onclick="darkMode()"><i class="fa fa-adjust"></i></button>
+        </section>
+
+        <!--Main Section-->
+        <div id="main" class="main">
+            <!--Filter Bar-->
+            <div class="row">
+                <div class="searchBar col-sm-12 mb-3">
+                  <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for courses">
+                </div>
+            </div>
+
+            <!--Course Cards ROW1-->
+            <div class="row" id="myCourses">
+                <div class="column webd">
+                <div class="card">
+                    <img class="app" src="Media/app-development.jpg" alt="app" style="height: 300px;"> 
+                    <div class=" content left">
+                        <h5>App Development</h5>
+                        <p class="price">$25</p>
+                    </div>
+                    <a href="bill.html" style="text-decoration: none;" style="text-decoration: none;">
+                    <div class=" content right">
+                        <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                    </div>
+                    </a>
+                </div>
+                </div>
+            
+                <div class="column webd">
+                    <div class="card">
+                    <img class="web" src="Media/web-development.jpg" alt="web" style="height: 300px;"> 
+                    <div class=" content left">
+                        <h5>Web Development</h5>
+                        <p class="price">$30</p>
+                    </div>
+                    <a href="bill.html" style="text-decoration: none;" style="text-decoration: none;">
+                    <div class=" content right">
+                        <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="column webd">
+                    <div class="card">
+                    <img class="JS" src="Media/JS.jpg" alt="JS" style="height: 300px;"> 
+                    <div class=" content left">
+                        <h5>Javascript: Beginner <br>to Advanced</h5>
+                        <p class="price">$44</p>
+                    </div>
+                    <a href="bill.html" style="text-decoration: none;">
+                    <div class=" content right">
+                        <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                <!--Row 2-->
+                <div class="column software">
+                <div class="card">
+                    <img class="python" src="Media/python.jpg" alt="python" style="height: 300px;"> 
+                    <div class=" content left">
+                        <h5>Game Development with <br>Python</h5>
+                        <p class="price">$29</p>
+                    </div>
+                    <a href="bill.html" style="text-decoration: none;">
+                    <div class=" content right">
+                        <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                    </div>
+                    </a>
+                </div>
+                </div>
+            
+                <div class="column ml-ai">
+                    <div class="card">
+                    <img class="ai" src="Media/AI.jpg" alt="ai" style="height: 300px;"> 
+                    <div class=" content left">
+                        <h5>Introduction to Artificial <br>Intelligence</h5>
+                        <p class="price">$39</p>
+                    </div>
+                    <a href="bill.html" style="text-decoration: none;">
+                    <div class=" content right">
+                        <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="column webd">
+                    <div class="card">
+                    <img class="react" src="Media/reactjs.jpg" alt="react" style="height: 300px;"> 
+                    <div class=" content left">
+                        <h5>React for <br>Web Developers</h5>
+                        <p class="price">$25</p>
+                    </div>
+                    <a href="bill.html" style="text-decoration: none;">
+                    <div class=" content right">
+                        <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+
+                <!--Row 3-->
+                <div class="column software">
+                    <div class="card">
+                    <img class="java" src="Media/java.jpg" alt="java" style="height: 300px;"> 
+                    <div class=" content left">
+                        <h5>Java for Programmers</h5>
+                        <p class="price">$29</p>
+                    </div>
+                    <a href="bill.html" style="text-decoration: none;">
+                    <div class=" content right">
+                        <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="column software">
+                    <div class="card">
+                        <img class="interview" src="Media/interview.jpg" alt="interview" style="height: 300px;"> 
+                        <div class=" content left">
+                            <h5>Ace the Job Interviews</h5>
+                            <p class="price">$49</p>
+                        </div>
+                        <a href="bill.html" style="text-decoration: none;">
+                        <div class=" content right">
+                            <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="column ml-ai">
+                    <div class="card">
+                        <img class="ml" src="Media/ml.jpg" alt="ml" style="height: 300px;"> 
+                        <div class=" content left">
+                            <h5>Machine Learning for All</h5>
+                            <p class="price">$35</p>
+                        </div>
+                        <a href="bill.html" style="text-decoration: none;">
+                        <div class="content right">
+                            <h6>Enroll &nbsp; <i class="fa fa-arrow-right"></i></h6>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="show-more"><a href="coming soon.html" style="text-decoration: none;">Show More</a></button>
+
+        <!--Footer-->
+        <section id="footer" class="footer">
+            <div class="watermark">
+
+            </div>
+            <div class="foot">
+                <p>Swim with us towards excellence. Let's Code and Learn.</p>
+                <p>Dive in with your Shoalmates.</p>
+                <p>Mail to us at : <a href="contact@shoalcademy.in">contact@shoalcademy.in</a></p>
+                <p class="links">
+                    <a class="fb-ic" href="#" target="_blank">
+                        <i class="fa fa-facebook"> </i>
+                    </a>&nbsp;&nbsp;&nbsp;
+                    <a class="gplus-ic" href="#">
+                        <i class="fa fa-google-plus"> </i>
+                    </a>&nbsp;&nbsp;&nbsp;
+                    <a class="li-ic" href="#" target="_blank">
+                        <i class="fa fa-linkedin"> </i>
+                    </a>&nbsp;&nbsp;&nbsp;
+                    <a class="ins-ic" href="#" target="_blank">
+                        <i class="fa fa-instagram"> </i>
+                    </a>    
+                </p>
+                <p style="font-size: 12px;">@Copyright ShoalCademy 2020</p>
+                <!--Wave effect-->
+                <div class="wave-section">
+                    <div class="cont">
+            
+                        <div class="line line-1">
+                            <div class="wave wave1" style="background-image: url(./Media/1.png);"></div>
+                        </div>
+            
+                        <div class="line line-2">
+                            <div class="wave wave2" style="background-image: url(./Media/2.png);"></div>
+                        </div>
+            
+                        <div class="line line-3">
+                            <div class="wave wave3" style="background-image: url(./Media/3.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            $(document).ready(function(){
+                $('#exampleModal').modal('show');
+                let btnprimary= document.querySelector('.right');
+                btnprimary.addEventListener('click',() => btnprimary.style.backgroundColor="white", btnprimary.style.borderColor='#fff', btnprimary.style.Color='black',btnprimary.style.boxShadow='none')
+            })
+        </script>
+        <script>
+            //Dark-Mode
+            function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            }
+            //Sticky Navbar
+            window.onscroll = function() {myFunc()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            function myFunc() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("navbar")
+                } else {
+                    navbar.classList.remove("navbar");
+                }
+            }
+            //Search filter
+            function myFunction() {
+                var input, filter, cards, cardContainer, h5, title, i;
+                input = document.getElementById("myFilter");
+                filter = input.value.toUpperCase();
+                cardContainer = document.getElementById("myCourses");
+                cards = cardContainer.getElementsByClassName("card");
+                for (i = 0; i < cards.length; i++) {
+                    title = cards[i].querySelector(".content h5");
+                    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                        cards[i].style.display = "";
+                    } else {
+                        cards[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+    </html>
