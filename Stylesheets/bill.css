@@ -172,7 +172,7 @@ textarea{
     .pricelist{
         width: 100%;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column-reverse;
     }
 
     .left{
@@ -184,6 +184,10 @@ textarea{
     .right{
         margin-right: 70px;
         font-size: 14px;
+    }
+
+    #services{
+        margin-left: 100px;
     }
     /*Form formatting*/
     #bill{
