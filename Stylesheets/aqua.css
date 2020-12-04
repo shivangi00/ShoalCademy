@@ -589,6 +589,8 @@ body{
 
         .main-content button{
             margin-right: 5rem;
+            padding: 15px 20px;
+            position: absolute;
         }
 
         /*Courses section*/
